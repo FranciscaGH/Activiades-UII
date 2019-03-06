@@ -8,17 +8,24 @@ namespace Activiades_UII.MODELO
 {
     class Estudiante
     {
-        public byte edad { get; set; }
-        public string genero { get; set; }
-        public string nombre { get; set; }
-        public long numeroControl { get; set; }
+        public string nombre;
+        public byte edad;
+        public char genero;
+        public long numeroControl;
+
+        public byte Edad { get; set; }
+        public char Genero { get; set; }
+        public string Nombre { get; set; }
+        public long NumeroControl { get; set; }
 
         public void Estudiar(string texto)
         {
+            return;
             //metodo para estudiar
         }
         public void HacerTarea(string texto)
         {
+            return;
             //metodo que hace tarea
 
         }//fin del metodo

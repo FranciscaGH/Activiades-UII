@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Activiades_UII.VISTA;
 
 namespace Activiades_UII
 {
@@ -15,6 +16,23 @@ namespace Activiades_UII
         public FormaHelloWorld()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEstudiantes_Click(object sender, EventArgs e)
+        {
+            FormaEstudiante forma = new FormaEstudiante();
+            forma.Show();
+            this.Hide();
         }
     }
 }

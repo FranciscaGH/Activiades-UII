@@ -49,6 +49,12 @@
     <Compile Include="MODELO\Carrera.cs" />
     <Compile Include="MODELO\Estudiante.cs" />
     <Compile Include="MODELO\Facilitador.cs" />
+    <Compile Include="VISTA\FormaEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FormaEstudiante.Designer.cs">
+      <DependentUpon>FormaEstudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="VISTA\FormaHelloWorld.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="VISTA\FormaEstudiante.resx">
+      <DependentUpon>FormaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FormaHelloWorld.resx">
       <DependentUpon>FormaHelloWorld.cs</DependentUpon>
     </EmbeddedResource>
