@@ -15,6 +15,9 @@ namespace Activiades_UII.MODELO.campeonato
         private string _comunidad;
         private string _categoria;
 
+        //Enlace con jugador
+        private List<Jugador> jugadores = new List<Jugador>();
+
         //Métodos Getter´s y Setter´s
         public int Id { get; set; }
         public string Nombre { get; set; }
