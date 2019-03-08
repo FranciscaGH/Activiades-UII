@@ -14,5 +14,18 @@ namespace Activiades_UII.MODELO
         public string Nombre { get; set; }
         public string Edad { get; set; }
         public string Profesion{ get; set; }
+
+        public void RevisarTarea(string texto)
+        {
+            return;
+        }
+
+        public void ExplicarTarea(string texto)
+        {
+            return;
+        }
+
+
     }
+  
 }
