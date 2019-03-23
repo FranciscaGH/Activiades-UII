@@ -51,9 +51,18 @@
     <Compile Include="MODELO\campeonato\Equipo.cs" />
     <Compile Include="MODELO\campeonato\Jugador.cs" />
     <Compile Include="MODELO\campeonato\Persona.cs" />
-    <Compile Include="MODELO\Carrera.cs" />
-    <Compile Include="MODELO\Estudiante.cs" />
-    <Compile Include="MODELO\Facilitador.cs" />
+    <Compile Include="MODELO\campeonato\Carrera.cs" />
+    <Compile Include="MODELO\campeonato\Estudiante.cs" />
+    <Compile Include="MODELO\campeonato\Facilitador.cs" />
+    <Compile Include="MODELO\Cinema_\Asiento.cs" />
+    <Compile Include="MODELO\Cinema_\Boleto.cs" />
+    <Compile Include="MODELO\Cinema_\Cartelera.cs" />
+    <Compile Include="MODELO\Cinema_\Cliente.cs" />
+    <Compile Include="MODELO\Cinema_\Pelicula.cs" />
+    <Compile Include="MODELO\Cinema_\Persona.cs" />
+    <Compile Include="MODELO\Cinema_\Reservacion.cs" />
+    <Compile Include="MODELO\Cinema_\Sala.cs" />
+    <Compile Include="MODELO\Cinema_\Taquillero.cs" />
     <Compile Include="VISTA\Administracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MODELO\championship\" />
+    <Folder Include="VISTA\Cinema_v\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
