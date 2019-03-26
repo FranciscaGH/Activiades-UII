@@ -91,6 +91,12 @@
     <Compile Include="VISTA\FormCampeonato.Designer.cs">
       <DependentUpon>FormCampeonato.cs</DependentUpon>
     </Compile>
+    <Compile Include="VISTA\FormJornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FormJornada.Designer.cs">
+      <DependentUpon>FormJornada.cs</DependentUpon>
+    </Compile>
     <Compile Include="VISTA\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="VISTA\FormCampeonato.resx">
       <DependentUpon>FormCampeonato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FormJornada.resx">
+      <DependentUpon>FormJornada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
