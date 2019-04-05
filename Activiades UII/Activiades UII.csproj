@@ -85,11 +85,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VISTA\FormCampeonato.cs">
+    <Compile Include="VISTA\FormAdministracion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VISTA\FormCampeonato.Designer.cs">
-      <DependentUpon>FormCampeonato.cs</DependentUpon>
+    <Compile Include="VISTA\FormAdministracion.Designer.cs">
+      <DependentUpon>FormAdministracion.cs</DependentUpon>
     </Compile>
     <Compile Include="VISTA\FormJornada.cs">
       <SubType>Form</SubType>
@@ -97,11 +97,11 @@
     <Compile Include="VISTA\FormJornada.Designer.cs">
       <DependentUpon>FormJornada.cs</DependentUpon>
     </Compile>
-    <Compile Include="VISTA\Main.cs">
+    <Compile Include="VISTA\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VISTA\Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="VISTA\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="VISTA\Administracion.resx">
       <DependentUpon>Administracion.cs</DependentUpon>
@@ -121,14 +121,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="VISTA\FormCampeonato.resx">
-      <DependentUpon>FormCampeonato.cs</DependentUpon>
+    <EmbeddedResource Include="VISTA\FormAdministracion.resx">
+      <DependentUpon>FormAdministracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FormJornada.resx">
       <DependentUpon>FormJornada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VISTA\Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="VISTA\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

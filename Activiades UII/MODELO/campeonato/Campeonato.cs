@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Activiades_UII.MODELO.campeonato
 {
-    class Campeonato
+    class Campeonato 
     {
+        private string path = "E:campeonato.txt";
         //propiedades del equipo
         private int _id;
         private string _nombre;
@@ -23,6 +24,12 @@ namespace Activiades_UII.MODELO.campeonato
         public string Nombre { get; set; }
         public DateTime FechaInicio { get; set; }
         public DateTime FechaTermino { get; set; }
-        
+
+        public override string ToString()
+        {
+            return _id + "| " + _nombre + "|" + _fechaInicio.ToString("dd/MMM/ yyyy") + "|" + _fechaTermino.ToString("dd/MMM/ yyyy");
+        }
+
+
     }
 }

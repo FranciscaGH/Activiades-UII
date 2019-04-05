@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Activiades_UII.VISTA
 {
-    public partial class Main : Form
+    public partial class Principal : Form
     {
-        public Main()
+        public Principal()
         {
             InitializeComponent();
         }
@@ -22,8 +22,10 @@ namespace Activiades_UII.VISTA
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCampeonato(object sender, EventArgs e)
         {
+            Program.formaAdministracion.Show();
+            Hide();
 
         }
 
@@ -45,6 +47,11 @@ namespace Activiades_UII.VISTA
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

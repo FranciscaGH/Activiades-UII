@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Activiades_UII.VISTA
 {
-    public partial class FormCampeonato : Form
+    public partial class FormAdministracion : Form
     {
-        public FormCampeonato()
+        public FormAdministracion()
         {
             InitializeComponent();
         }
@@ -33,6 +33,26 @@ namespace Activiades_UII.VISTA
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FormAdministracion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
