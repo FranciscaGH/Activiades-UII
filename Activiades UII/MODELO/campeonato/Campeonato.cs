@@ -8,12 +8,17 @@ namespace Activiades_UII.MODELO.campeonato
 {
     class Campeonato 
     {
-        private string path = "E:campeonato.txt";
+        
         //propiedades del equipo
         private int _id;
         private string _nombre;
         private DateTime _fechaInicio ;
         private DateTime _fechaTermino;
+
+        public Campeonato()
+        {
+            _id = 1;
+        }
         
 
         //Enlace con jornada

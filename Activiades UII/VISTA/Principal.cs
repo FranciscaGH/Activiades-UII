@@ -22,12 +22,7 @@ namespace Activiades_UII.VISTA
 
         }
 
-        private void buttonCampeonato(object sender, EventArgs e)
-        {
-            Program.formaAdministracion.Show();
-            Hide();
-
-        }
+      
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -50,6 +45,11 @@ namespace Activiades_UII.VISTA
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

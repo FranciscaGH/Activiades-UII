@@ -10,7 +10,7 @@ namespace Activiades_UII
     {
        
         public static Principal formaPrincipal = null;
-        public static FormAdministracion formaAdministracion = null;
+        public static FormCampeonato formaCampeonato = null;
         public static FormJornada formaJornada = null;
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace Activiades_UII
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            
-            formaAdministracion = new FormAdministracion();
+            formaCampeonato = new FormCampeonato();
             formaJornada = new FormJornada();
             formaPrincipal = new VISTA.Principal();
             Application.Run(new Principal());

@@ -16,5 +16,10 @@ namespace Activiades_UII.VISTA
         {
             InitializeComponent();
         }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Activiades_UII.VISTA
 {
-    partial class FormAdministracion
+    partial class FormCampeonato
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdministracion));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCampeonato));
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -70,7 +70,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 18);
+            this.label4.Size = new System.Drawing.Size(183, 18);
             this.label4.TabIndex = 9;
             this.label4.Text = "Fecha de inicio";
             // 
@@ -78,12 +78,13 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 15.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(102, 0);
+            this.label5.Location = new System.Drawing.Point(101, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(274, 23);
             this.label5.TabIndex = 8;
             this.label5.Text = "Administracion de campeonato";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label3
             // 
@@ -93,7 +94,7 @@
             this.label3.Font = new System.Drawing.Font("Malgun Gothic Semilight", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 97);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 19);
+            this.label3.Size = new System.Drawing.Size(92, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "Periodo";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -102,11 +103,12 @@
             // textBox2
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(102, 62);
+            this.textBox2.Location = new System.Drawing.Point(101, 62);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(380, 32);
+            this.textBox2.Size = new System.Drawing.Size(379, 32);
             this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -116,7 +118,7 @@
             this.label2.Font = new System.Drawing.Font("Malgun Gothic Semilight", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 38);
+            this.label2.Size = new System.Drawing.Size(92, 38);
             this.label2.TabIndex = 3;
             this.label2.Text = "Nombre";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,10 +127,10 @@
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(102, 33);
+            this.textBox1.Location = new System.Drawing.Point(101, 33);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(380, 23);
+            this.textBox1.Size = new System.Drawing.Size(379, 23);
             this.textBox1.TabIndex = 2;
             // 
             // label1
@@ -138,7 +140,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 29);
+            this.label1.Size = new System.Drawing.Size(92, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,7 +151,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 24);
+            this.pictureBox1.Size = new System.Drawing.Size(92, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -159,7 +161,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.38095F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.61905F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 1);
@@ -199,12 +201,12 @@
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker2, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(102, 100);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(101, 100);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(380, 58);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(379, 58);
             this.tableLayoutPanel2.TabIndex = 11;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
@@ -214,7 +216,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(193, 0);
+            this.label6.Location = new System.Drawing.Point(192, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(184, 18);
             this.label6.TabIndex = 10;
@@ -225,12 +227,12 @@
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimePicker1.Location = new System.Drawing.Point(3, 21);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(184, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker1.TabIndex = 11;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(193, 21);
+            this.dateTimePicker2.Location = new System.Drawing.Point(192, 21);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(173, 20);
             this.dateTimePicker2.TabIndex = 12;
@@ -244,9 +246,9 @@
             this.Column2,
             this.Column3});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(102, 191);
+            this.dataGridView1.Location = new System.Drawing.Point(101, 191);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(380, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(379, 185);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -278,7 +280,7 @@
             this.label7.Font = new System.Drawing.Font("Malgun Gothic Semilight", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(3, 161);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 27);
+            this.label7.Size = new System.Drawing.Size(92, 27);
             this.label7.TabIndex = 13;
             this.label7.Text = "Jornada";
             // 
@@ -286,26 +288,28 @@
             // 
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(102, 164);
+            this.comboBox1.Location = new System.Drawing.Point(101, 164);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(380, 21);
+            this.comboBox1.Size = new System.Drawing.Size(379, 21);
             this.comboBox1.TabIndex = 14;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(488, 191);
+            this.pictureBox2.Location = new System.Drawing.Point(486, 191);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 185);
+            this.pictureBox2.Size = new System.Drawing.Size(36, 185);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(488, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(486, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(33, 24);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -315,7 +319,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(488, 33);
+            this.pictureBox4.Location = new System.Drawing.Point(486, 33);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(33, 23);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -324,21 +328,21 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(488, 164);
+            this.button1.Location = new System.Drawing.Point(486, 164);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(33, 21);
             this.button1.TabIndex = 18;
             this.button1.Text = "Jornada";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // FormAdministracion
+            // FormCampeonato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(525, 379);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "FormAdministracion";
+            this.Name = "FormCampeonato";
             this.Text = "FormCampeonato";
             this.Load += new System.EventHandler(this.FormAdministracion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
