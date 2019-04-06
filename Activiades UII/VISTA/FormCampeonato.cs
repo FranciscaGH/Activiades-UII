@@ -12,7 +12,8 @@ using Activiades_UII.VISTA;
 namespace Activiades_UII.VISTA
 {
     public partial class FormCampeonato : Form
-    {    private string path = @"E:\temp\campeonato.txt";
+    {
+        private string path = @"E:\temp\campeonato.txt";
 
 
         private void LoadGrid()
@@ -27,10 +28,10 @@ namespace Activiades_UII.VISTA
                 string text;
 
                 while ((text = streamReader.ReadLine()) != null)
-                    {
+                {
                     string[] array = text.Split('|');
                     dataGridView1.Rows.Add(array);
-                      }
+                }
                 streamReader.Close();
 
             }
@@ -40,10 +41,17 @@ namespace Activiades_UII.VISTA
                 File.Create(path);
             }
         }
+
+
         public FormCampeonato()
         {
             InitializeComponent();
         }
+        private void FormCampeonato_Load(object sender, EventArgs e)
+        {
+            LoadGrid();
+        }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -75,70 +83,56 @@ namespace Activiades_UII.VISTA
 
         }
 
-        private void FormAdministracion_Load(object sender, EventArgs e)
-        {
-            LoadGrid();
-        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-          
 
-        }
-
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
 
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            string msg = "";
 
-            if (textNombre.Text.Lenght < 3|| textNombre.Lenght > 50)
-            {
-                msg += "El nombre debe estar comprendido entre 3 y 50 caracteres\n";
-            }
-
-            DateTime fechaInicio = new DateTime(dateInicio.Value.Year, dateInicio.Value.Month, dateInicio.Value.Day, 0, 0, 0);
-            DateTime fechaFinal = new DateTime(dateFin.Value.Year,dateFin.Value.Month,dateFin.Value.Day,0,0,0);
-            if (DateTime.Compare(fechaInicio, fechaFinal) >= 0)
-            {
-                msg += "\nLa fecha Inicio debe ser menor a la fecha final";
-
-            }
-
-
-            if (msg.Lenght > 0)
-            {
-                MessageBox.Show(msg, "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            else
-
-            {
-                Campeonato campeonato = new Campeonato();
-                campeonato.Id = new Random().Next(1, 1000);
-                campeonato.Nombre = textNombre.Text;
-                campeonato.FechaInicio = dateInicio.Value;
-                campeonato.FechaTermino = dateFin.Value;
-
-
-                string[] array = campeonato.ToString().Split(new char[] { '|' });
-                dataGridView1.Rows.Add(array);
-
-
-            }
         }
+        private void AddRecordFile(FormCampeonato campeonato)
+        {
+            StreamWriter writer = new StreamWriter(path, true);
 
+            writer.WriteLine(campeonato.ToString());
+            writer.Close();
+        }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void menuEliminar_Opening(object sender, CancelEventArgs e)
+        {
+            string opcion = e.ClickedItem.ToString().Tolower();
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dataGridView1.SelectedRows[0];
+                string id = dataGridView1.SelectedCells[0].Value.ToString();
+                string nombre = dataGridView1.SelectedCells[1].Value.ToString();
+
+
+                switch (opcion)
+                {
+                    case "eliminar":
+                        string mensaje = "¿Deseas eliminar el" + nombre + "con Id=" + id;
+                        menuEliminar.Hide();
+
+                        if (MessageBox.Show(mensaje, "Eliminando registro", MessageBoxButtons.YesNo) == DialogResult.Yes) ;
+                        {
+                            dataGridView1.Rows.RemoveAt(row.Index);
+                        }
+                        break;
+
+                    case "modificar":
+                        break;
+
+                }
+            }
         }
     }
 }
